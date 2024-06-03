@@ -6,7 +6,7 @@ const exec = require('@actions/exec')
 
 function run()
 { 
-  const bucket = core.getInput('bucket', {required: true})
+  const bucket = core.getInput('bucket-name', {required: true})
   const bucketRegion = core.getInput('bucket-region', {required: true})
   const distFolder = core.getInput('dist-folder', {required: true})
 
